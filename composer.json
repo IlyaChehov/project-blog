@@ -1,0 +1,14 @@
+{
+    "name": "ilya/www",
+    "autoload": {
+        "psr-4": {
+            "Site\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ilya Chehov"
+        }
+    ],
+    "require": {}
+}
