@@ -6,6 +6,7 @@
             "App\\": "app/"
         },
         "files": [
+            "config/variables.php",
             "core/helpers/helpers.php"
         ]
     },
@@ -15,6 +16,8 @@
         }
     ],
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-mbstring": "*"
     }
 }

@@ -1,0 +1,73 @@
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer a {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+    color: #007bff !important;
+    transform: scale(1.1);
+}
+
+.badge {
+    font-weight: 500;
+}
+
+#themeToggle {
+    transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+    transform: rotate(20deg);
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+[data-bs-theme="dark"] .card:hover {
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-bs-theme="dark"] footer a:hover {
+    color: #66b3ff !important;
+}
+
+.card-form {
+    transition: none;
+    transform: none;
+}
+
+.card-form:hover {
+    transform: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

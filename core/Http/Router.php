@@ -56,12 +56,13 @@ class Router
         return false;
     }
 
-    public function dispatch()
+    public function dispatch(): mixed
     {
         $route = $this->match();
         if ($route === false) {
             echo 'Ошибка 404';
             $this->response->setResponseCode();
+            die;
         }
         $handler = $route['handler'];
         if (is_array($handler)) {
